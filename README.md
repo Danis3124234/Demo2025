@@ -67,17 +67,14 @@ connect ip interface TO-ISP
 
 ```
 interface HQ-SRV
- ip mtu 1500
- ip address 192.168.0.1/26
-!
+ip mtu 1500
+ip address 192.168.0.1/26
 interface HQ-CLI
- ip mtu 1500
- ip address 192.168.0.65/28
-!
+ip mtu 1500
+ip address 192.168.0.65/28
 interface HQ-MGMT
- ip mtu 1500
- ip address 192.168.0.81/29
-!
+ip mtu 1500
+ip address 192.168.0.81/29
 ```
 
 Заходим на порт и создаем для каждой `vlan` свой `service-instance`.
