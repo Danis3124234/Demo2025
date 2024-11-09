@@ -119,7 +119,7 @@ ip tunnel 172.16.4.2 172.16.5.2 mode gre
 ip route 0.0.0.0/0 172.16.4.1
 ```
 
-## HQ-SRV
+### HQ-SRV
 
 ```
 echo "TYPE=eth
@@ -141,7 +141,7 @@ echo default via 192.168.0.1 > /etc/net/ifaces/ens192/ipv4route
 systemctl restart network
 ```
 
-## BR-RTR
+### BR-RTR
 
 ```
 configure
@@ -169,7 +169,7 @@ ip route 0.0.0.0/0 172.16.5.1
 #confirm
 ```
 
-## BR-SRV
+### BR-SRV
 
 ```
 echo "TYPE=eth
